@@ -1,4 +1,4 @@
-import TestComp from '../components/TestComp';
+import TestComp from '../../components/TestComp';
 
 export default function TestPage() {
   return (

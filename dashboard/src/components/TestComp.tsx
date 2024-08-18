@@ -1,7 +1,9 @@
+"use client";
 import styled from 'styled-components';
+import theme from '../styles/theme';
 
-const Button = styled.button`
-  background-color: #0070f3;
+const ButtonComp = styled.button`
+  background-color: ${theme.colors.primary};
   color: white;
   padding: 8px 16px;
   border: none;
@@ -9,15 +11,14 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #005bb5;
+    background-color: ${theme.colors.secondary};
   }
 `;
 
 const TestComp = () => {
   return (
     <div>
-      <h1>Styled Components with Next.js</h1>
-      <Button>Click Me</Button>
+      <ButtonComp>Click Me</ButtonComp>
     </div>
   )
 }
